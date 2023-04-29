@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "s",
+  title: "LINE schemas project",
+  description: "LINEスキーマURLを収集するー",
   base: "/LINE-schemas",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -23,7 +23,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/nakasyou/LINE-schemas' }
     ]
   }
 })
