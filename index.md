@@ -3,23 +3,21 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "s"
-  tagline: My great project tagline
+  name: "LINE schemas project"
+  text: "LINEスキーマを収集する"
+  tagline: 
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Let's go!
+      link: /docs
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: オープンソース
+    details: LINE-internal-URL projectは、GitHubでホストされており、誰でも変更を提案することができます
+  - title: 細かい説明
+    details: 細かい部分までガイドします
+  - title: コミュニティによる維持
+    details: LINE-internal-URL projectは、コミュニティによって維持されます。LINEチームとは関係がありません。
+footer: Made by  with ❤️ Vitepress
 ---
 
