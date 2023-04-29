@@ -11,7 +11,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Introduction', link: '/docs' }
     ],
-
+    displayAllHeaders: true,
     sidebar: [
       {
         
