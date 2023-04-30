@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { generateSidebar } from 'vitepress-sidebar'
+const { generateSidebar } = await import("vitepress-sidebar")
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
