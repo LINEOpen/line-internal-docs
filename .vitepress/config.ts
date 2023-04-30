@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { generateSidebar } from 'vitepress-sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -12,7 +13,18 @@ export default defineConfig({
       { text: 'Introduction', link: '/docs' }
     ],
     displayAllHeaders: true,
-    sidebar: sidebar(),
+    sidebar: generateSidebar({
+      root: '/docs',
+      // rootGroupText: 'Contents',
+      // useTitleFromFileHeading: true,
+      // hyphenToSpace: true,
+      // underscoreToSpace: true,
+      // collapsed: true,
+      // collapseDepth: 2,
+      // sortByFileName: ['first.md', 'second', 'third.md'],
+      // withIndex: true,
+      // includeEmptyGroup: false
+    }),
     socialLinks: [
       { icon: 'github', link: 'https://github.com/nakasyou/LINE-schemas' }
     ]
