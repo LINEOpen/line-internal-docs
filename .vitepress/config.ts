@@ -1,14 +1,10 @@
 import { defineConfig } from 'vitepress'
 
-import sidebar from "vuepress-auto-sidebar"
-
-sidebar.baseOption = "./docs"
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "LINE schemas project",
-  description: "LINEスキーマURLを収集するー",
-  base: "/LINE-schemas",
+  title: "LINE schemes project",
+  description: "LINEスキームURLを収集するー",
+  base: "/LINE-schemes",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -16,10 +12,13 @@ export default defineConfig({
       { text: 'Introduction', link: '/docs' }
     ],
     displayAllHeaders: true,
-    sidebar: sidebar.getSidebar(),
+    sidebar: sidebar(),
     socialLinks: [
       { icon: 'github', link: 'https://github.com/nakasyou/LINE-schemas' }
     ]
   }
 })
 
+function sidebar(){
+  return
+}
