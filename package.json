@@ -8,6 +8,6 @@
     "vitepress": "^1.0.0-alpha.74"
   },
   "dependencies": {
-    "vuepress-auto-sidebar": "^1.1.1"
+    "vitepress-sidebar": "^1.3.1"
   }
 }
