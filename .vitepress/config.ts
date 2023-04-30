@@ -34,7 +34,7 @@ function sidebar(){
       // includeEmptyGroup: false
   })
   for(const g of gs){
-    if(g.text === "docs){
+    if(g.text === "docs"){
        return g.items
     }
   }
