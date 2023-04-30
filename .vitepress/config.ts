@@ -30,7 +30,7 @@ function sidebar(){
       // collapsed: true,
       // collapseDepth: 2,
       // sortByFileName: ['first.md', 'second', 'third.md'],
-      withIndex: true,
+      // withIndex: true,
       // includeEmptyGroup: false
   })[0].items
   for(const g of gs){
