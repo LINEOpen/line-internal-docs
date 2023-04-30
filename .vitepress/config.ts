@@ -13,7 +13,15 @@ export default defineConfig({
       { text: 'Introduction', link: '/docs' }
     ],
     displayAllHeaders: true,
-    sidebar: generateSidebar({
+    sidebar: sidebar(),
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/nakasyou/LINE-schemas' }
+    ]
+  }
+})
+
+function sidebar(){
+  const gs = generateSidebar({
       root: '/',
       rootGroupText: 'Contents',
       useTitleFromFileHeading: true,
@@ -24,13 +32,10 @@ export default defineConfig({
       // sortByFileName: ['first.md', 'second', 'third.md'],
       withIndex: true,
       // includeEmptyGroup: false
-    }),
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/nakasyou/LINE-schemas' }
-    ]
+  })
+  for(const g of gs){
+    if(g.text === "docs){
+       return g.items
+    }
   }
-})
-
-function sidebar(){
-  return
 }
