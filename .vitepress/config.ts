@@ -5,7 +5,7 @@ const { generateSidebar } = await import("vitepress-sidebar")
 export default defineConfig({
   title: "LINE schemes project",
   description: "LINEスキームURLを収集するー",
-  base: "/",
+  base: "/docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -14,7 +14,7 @@ export default defineConfig({
     ],
     displayAllHeaders: true,
     sidebar: generateSidebar({
-      root: '/docs',
+      root: '/',
       rootGroupText: 'Contents',
       useTitleFromFileHeading: true,
       // hyphenToSpace: true,
