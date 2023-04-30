@@ -15,14 +15,14 @@ export default defineConfig({
     displayAllHeaders: true,
     sidebar: generateSidebar({
       root: '/docs',
-      // rootGroupText: 'Contents',
-      // useTitleFromFileHeading: true,
+      rootGroupText: 'Contents',
+      useTitleFromFileHeading: true,
       // hyphenToSpace: true,
       // underscoreToSpace: true,
       // collapsed: true,
       // collapseDepth: 2,
       // sortByFileName: ['first.md', 'second', 'third.md'],
-      // withIndex: true,
+      withIndex: true,
       // includeEmptyGroup: false
     }),
     socialLinks: [
