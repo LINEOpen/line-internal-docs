@@ -11,7 +11,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Introduction', link: '/docs' }
+      { text: 'Introduction', link: '/docs' },
+      { text: 'GitHubで変更を提案', link: 'https://github.com/nakasyou/LINE-schemas' }
     ],
     displayAllHeaders: true,
     sidebar: getSidebar({
