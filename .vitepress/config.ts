@@ -32,7 +32,7 @@ function sidebar(){
       // sortByFileName: ['first.md', 'second', 'third.md'],
       withIndex: true,
       // includeEmptyGroup: false
-  })
+  })[0].items
   for(const g of gs){
     if(g.text === "docs"){
        return g.items
