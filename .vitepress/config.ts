@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 //const { generateSidebar } = await import("vitepress-sidebar")
-import { getSidebar } from 'vitepress-plugin-auto-sidebar'
+//import { getSidebar } from 'vitepress-plugin-auto-sidebar'
+import config_sidebar from "../sidebar.ts"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -15,9 +16,7 @@ export default defineConfig({
       { text: 'GitHubで変更を提案', link: 'https://github.com/nakasyou/LINE-schemas' }
     ],
     displayAllHeaders: true,
-    sidebar: getSidebar({
-      contentDirs: ["docs"],
-    }),
+    sidebar: config_sidebar(),
     socialLinks: [
       { icon: 'github', link: 'https://github.com/nakasyou/LINE-schemas' }
     ]
