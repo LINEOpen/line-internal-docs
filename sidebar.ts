@@ -26,6 +26,6 @@ export default () => ([
   { text: "ルール", link: "/docs/rule"},
   {
     text: "Schemas",
-    getSchemes(),
+    items: getSchemes(),
   },
 ])
