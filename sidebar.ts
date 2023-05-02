@@ -3,7 +3,7 @@ import fs from "fs"
 function getFiles(path){
   return fs.readdirSync(path, { withFileTypes: true }).filter(dirent => dirent.isFile()).map(e=>path+e.name);
 }
-const getSchemes = () => getFiles("./docs/schemes/").map(path => {
+const getSchemes = (path) => getFiles(path).map(path => {
   const markdown = fs.readFileSync(path, 'utf8');
   let h1 = markdown.match(/^# .+$/mg);
   h1 = h1 ? h1[0].slice(2) : "None";
@@ -23,9 +23,10 @@ const getSchemes = () => getFiles("./docs/schemes/").map(path => {
 })
 export default () => ([
   { text: "Introduction", link: "/docs" },
-  { text: "ルール", link: "/docs/rule"},
+  { text: "ルール", link: "/docs/rule" },
+  { text: "Words", link: "/docs/words", items: getSchemes("./docs/words/"), collapsed: false,},
   {
     text: "Schemas",
-    items: getSchemes(),
+    items: getSchemes("./docs/schemes/"),
   },
 ])
