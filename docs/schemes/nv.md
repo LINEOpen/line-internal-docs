@@ -6,9 +6,11 @@
 カメラを開きます。
 ## `nv/cameraRoll/{mode: "single" | "multi"}`
 カメラロールを開きます。
-### mode: single
+### Options
+#### `mode`
+##### `single`
 一枚のみ開きます。
-### mode: multi
+##### `multi`
 複数開くことができます。
 ### Example
 - `line://nv/cameraRoll/single`
