@@ -24,7 +24,7 @@
 ## `nv/recommendOA/{LINE_ID}`
 "送信先を選択"画面が表示されます。公式アカウントを共有できます。
 ### `LINE_ID`
-公式アカウントの[LINE ID](/docs/words/line_ld)を指定します。必須です。
+公式アカウントの[LINE ID](/docs/words/line_id)を指定します。必須です。
 ### Example
 - `line://nv/recommendOA/ms_rinna`
 りんなを共有できます
