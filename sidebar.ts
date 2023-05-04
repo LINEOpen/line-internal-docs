@@ -21,7 +21,7 @@ const getSchemes = (path, noth2: boolean | void) => getFiles(path).map(path => {
     text: h1,
     items: h2s.map(h2=>({
       text: h2,
-      link: path.replace(/(\.md)|(\.)/g,"") + "#" + h2.replace(/[ `\/"'\{\}:\|_]+/g,"-").replace(/(^-+)|(-+$)/g,"").toLowerCase(),
+      link: path.replace(/(\.md)|(\.)/g,"") + "#" + h2.replace(/[\?= `\/"'\{\}:\|_]+/g,"-").replace(/(^-+)|(-+$)/g,"").toLowerCase(),
     })),
     link: path.replace(/(\.md)|(\.)/g,""),
     collapsed: false,
