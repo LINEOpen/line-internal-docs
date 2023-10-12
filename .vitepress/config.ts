@@ -7,18 +7,18 @@ import config_sidebar from "../sidebar.ts"
 export default defineConfig({
   title: "LINE schemes project",
   description: "LINEスキームURLを収集するー",
-  base: "/LINE-schemes",
+  base: "/line-internal-docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Introduction', link: '/docs' },
-      { text: 'GitHubで変更を提案', link: 'https://github.com/nakasyou/LINE-schemas' }
+      { text: 'GitHubで変更を提案', link: 'https://github.com/LINEOpen/line-internal-docs' }
     ],
     displayAllHeaders: true,
     sidebar: config_sidebar(),
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/nakasyou/LINE-schemas' }
+      { icon: 'github', link: 'https://github.com/LINEOpen/line-internal-docs' }
     ]
   }
 })
