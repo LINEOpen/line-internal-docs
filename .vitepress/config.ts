@@ -7,7 +7,7 @@ import config_sidebar from "../sidebar.ts"
 export default defineConfig({
   title: "LINE schemes project",
   description: "LINEスキームURLを収集するー",
-  base: "/line-internal-docs",
+  base: "/line-schemes",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
